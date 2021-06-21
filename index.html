@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Кут</title>
+    <!-- Link Animation -->
+    <script>
+        AOS.init();
+    
+    // You can also pass an optional settings object
+    // below listed default settings
+    AOS.init({
+      // Global settings:
+      disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+      startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+      initClassName: 'aos-init', // class applied after initialization
+      animatedClassName: 'aos-animate', // class applied on animation
+      useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+      disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+      debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+      throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+      
+    
+      // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+      offset: 120, // offset (in px) from the original trigger point
+      delay: 0, // values from 0 to 3000, with step 50ms
+      duration: 400, // values from 0 to 3000, with step 50ms
+      easing: 'ease', // default easing for AOS animations
+      once: false, // whether animation should happen only once - while scrolling down
+      mirror: false, // whether elements should animate out while scrolling past them
+      anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+    
+    });
+    </script>
+</head>
+
+<body>
+    <main>
+        <div class="main-content">
+            <a href="./index.html" class="logo">
+                <img src="./img/logo.png" data-aos="fade-left" alt="Kut Stroy">
+            </a>
+            <h1 data-aos="fade-right"  class="title">
+                Учителям и медикам
+                <p data-aos="zoom-out-right">скидки с ежемесячной
+                    оплатой по <span data-aos="fade-down"
+                    data-aos-easing="linear"
+                    data-aos-duration="3500">25000</span> тыс сом</p>
+            </h1>
+            <center class="heartbeat ">
+                <a id="btn" href="#"  class="btn">Оставить заявку</a>
+            </center>
+            <p data-aos="zoom-out" class="text">
+                Без никаких процентов
+            </p>
+        </div>
+        <img data-aos="fade-right" y="-5%"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine" class="home" src="./img/home.png" alt="Home">
+        <img data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000" src="./img/triangle.png" alt="Triangle" class="figure-1">
+
+         <!-- The modal -->
+         <div  data-aos="fade-up"
+         data-aos-anchor-placement="top-bottom" class="modal" id="modal">
+            <div class="modal-content">
+                <form action="#" data-aos="fade-up"
+                data-aos-anchor-placement="bottom-bottom" class="form">
+                    <input type="text" placeholder="Имя" required>
+                    <input type="text" placeholder="Телефон" required>
+                    <input type="submit" value="Отправить">
+                </form>
+                <img src="./img/kut-form.png" alt="Kut stroy">
+            </div>
+         </div>
+    </main>
+    <script src="./js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
